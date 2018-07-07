@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather cards</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500'>
+
+      <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div>
+      <form action="">
+          <input type="search" name="search" placeholder="Enter Zip code" id="searchbox">
+          <input type="submit" value="search" id="btn">
+      </form>
+  </div>
+  
+  <article class="weather weather--sunny" id="sunny">
+  <header class="weather__header">
+    <span class="icon icon--sun"><span class="rays"></span></span>
+    <p class="weather__header__weather">Sunny</p>
+    <p class="weather__header__temperature">0°</p>
+    <h1 class="weather__header__location">No address</h1>
+  </header>
+  <ul class="weather__details">
+    <li class="weather__detail">
+      <span class="weather__detail__title">Wind</span>
+      <span class="weather__detail__value direction" id="direction">0 mph</span>
+    </li>
+    <li class="weather__detail">
+      <span class="weather__detail__title">Humidity</span>
+      <span class="weather__detail__value humidity" id="humidity">0%</span>
+    </li>
+    <li class="weather__detail">
+      <span class="weather__detail__title">Pressure</span>
+      <span class="weather__detail__value pressure" id="pressure">0 in</span>
+    </li>
+  </ul>
+</article>
+
+<article class="weather weather--cloudy" id="cloudy">
+  <header class="weather__header">
+    <span class="icon icon--cloud"></span>
+    <p class="weather__header__weather">Cloudy</p>
+    <p class="weather__header__temperature">0°</p>
+    <h1 class="weather__header__location">No address</h1>
+  </header>
+  <ul class="weather__details">
+    <li class="weather__detail">
+      <span class="weather__detail__title">Wind</span>
+      <span class="weather__detail__value direction">0 mph</span>
+    </li>
+    <li class="weather__detail">
+      <span class="weather__detail__title">Humidity</span>
+      <span class="weather__detail__value humidity">80%</span>
+    </li>
+    <li class="weather__detail">
+      <span class="weather__detail__title">Pressure</span>
+      <span class="weather__detail__value pressure">0 in</span>
+    </li>
+  </ul>
+</article>
+
+<article class="weather weather--rain" id="rain">
+  <header class="weather__header">
+    <span class="icon icon--cloud icon--rain"><span class="drops"></span></span>
+    <p class="weather__header__weather">Rain</p>
+    <p class="weather__header__temperature">0°</p>
+    <h1 class="weather__header__location">No address</h1>
+  </header>
+  <ul class="weather__details">
+    <li class="weather__detail">
+      <span class="weather__detail__title">Wind</span>
+      <span class="weather__detail__value direction">0 mph</span>
+    </li>
+    <li class="weather__detail">
+      <span class="weather__detail__title">Humidity</span>
+      <span class="weather__detail__value humidity">0%</span>
+    </li>
+    <li class="weather__detail">
+      <span class="weather__detail__title">Pressure</span>
+      <span class="weather__detail__value pressure">0 in</span>
+    </li>
+  </ul>
+</article>
+  
+<script src="/socket.io/socket.io.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
